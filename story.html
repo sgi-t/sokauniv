@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>先輩たちのリアルな成長ストーリー | 創価大学 町田特設ナビ</title>
-  <meta name="description" content="創価大学で夢を見つけ、実現へと駆け抜ける先輩たちのリアルなインタビュー動画を掲載。「人のために」「夢の保育士へ」「世界企業へ内定」など、等身大の挑戦ストーリーをご覧ください。">
+  <meta name="description" content="創価大学で夢を見つけ、実現へと駆け抜ける先輩たちのリアルなインタビュー動画を掲載。「人のために」「夢の保育士へ」「世界企業へ内定」「逆転劇」「一生の友」など、等身大の挑戦ストーリー全17編をご覧ください。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Allura&display=swap" rel="stylesheet">
@@ -68,7 +68,7 @@
 
     <div class="wrap hero__inner">
       <div class="hero__badge">
-        <span>🎬 先輩たちのリアルな挑戦と成長</span>
+        <span>🎬 先輩たちのリアルな挑戦と成長（全17編）</span>
       </div>
       <p class="hero__script-title">Student Stories</p>
       <h1 class="hero__title">
@@ -77,7 +77,8 @@
       </h1>
       <p class="hero__desc">
         何のために学ぶのか。どんな自分になりたいのか。<br>
-        創価大学で仲間や恩師と出会い、大きく成長した先輩たちの等身大のストーリーを動画でご紹介します。
+        創価大学で仲間や恩師と出会い、大きく成長した先輩たちの等身大のストーリーを動画でご紹介します。<br>
+        興味のあるテーマや気になる夢に合わせてご覧ください！
       </p>
     </div>
   </section>
@@ -88,13 +89,22 @@
       <div class="sec-head">
         <span class="eyebrow"><i></i> VOICE OF STUDENTS <i></i></span>
         <span class="eyebrow-script">Video Interviews</span>
-        <h2 class="sec-title">学生たちのリアルな挑戦動画</h2>
-        <p class="sec-desc">それぞれの夢に向かって挑戦し続ける創大生の姿をご覧ください。</p>
+        <h2 class="sec-title">先輩たちのキャンパスストーリー</h2>
+        <p class="sec-desc">それぞれの夢に向かって挑戦し続ける創大生の姿をご覧ください。気になるカテゴリで絞り込めます。</p>
       </div>
 
-      <div class="grid-3">
-        <!-- 動画1: 人のために行動できる自分に -->
-        <div class="video-fuda">
+      <!-- カテゴリ絞り込みタブ -->
+      <div class="tab-filter-wrap">
+        <button class="tab-btn active" data-filter="all">すべて見る（17本）</button>
+        <button class="tab-btn" data-filter="human">人間教育・成長</button>
+        <button class="tab-btn" data-filter="global">グローバル・海外挑戦</button>
+        <button class="tab-btn" data-filter="career">就職・夢の実現</button>
+        <button class="tab-btn" data-filter="friends">仲間・家族・絆</button>
+      </div>
+
+      <div class="grid-3" id="videoGrid">
+        <!-- 1: 人のために行動できる自分に -->
+        <div class="video-fuda video-card-item" data-category="human">
           <div class="video-wrapper">
             <iframe 
               src="https://www.youtube.com/embed/HdIuMm0wTqo" 
@@ -107,14 +117,14 @@
             <span class="video-tag">🌱 人間教育・キャンパスライフ</span>
             <h3 class="video-title">人のために行動できる自分に</h3>
             <p class="video-desc">
-              創価大学での様々な出会いやボランティア活動、仲間と切磋琢磨する中で育まれた「誰かの力になりたい」という強い想い。人間性を磨き、大きく成長した軌跡を語ります。
+              創価大学での出会いやボランティア活動、仲間と切磋琢磨する中で育まれた「誰かの力になりたい」という強い想い。人間性を磨き、大きく成長した軌跡を語ります。
             </p>
             <span class="video-for-who">💡 小中高生全般・人間関係に悩む方へ</span>
           </div>
         </div>
 
-        <!-- 動画2: 亡き父との約束保育士に -->
-        <div class="video-fuda">
+        <!-- 2: 亡き父との約束保育士に -->
+        <div class="video-fuda video-card-item" data-category="career">
           <div class="video-wrapper">
             <iframe 
               src="https://www.youtube.com/embed/bp6XTlEnP-M" 
@@ -133,8 +143,8 @@
           </div>
         </div>
 
-        <!-- 動画3: GCP生として第一志望の企業に -->
-        <div class="video-fuda">
+        <!-- 3: GCP生として第一志望の企業に -->
+        <div class="video-fuda video-card-item" data-category="global">
           <div class="video-wrapper">
             <iframe 
               src="https://www.youtube.com/embed/EZ5ia47YGp4" 
@@ -150,6 +160,286 @@
               世界で活躍するリーダーを育成する「グローバル・シティズンシップ・プログラム（GCP）」で鍛え抜かれ、第一志望のグローバル企業の内定を獲得した学生のインタビューです。
             </p>
             <span class="video-for-who">💡 高校生・留学や国際企業を目指す方へ</span>
+          </div>
+        </div>
+
+        <!-- 4: VOL.17 "ありがとう"を胸に 世界へ羽ばたく人材に (hyTVXEMK5Ik) -->
+        <div class="video-fuda video-card-item" data-category="global">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/hyTVXEMK5Ik" 
+              title="キャンパスストーリーVOL.17『ありがとうを胸に 世界へ羽ばたく人材に』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🌏 グローバル・感謝の学び</span>
+            <h3 class="video-title">VOL.17『"ありがとう"を胸に 世界へ羽ばたく人材に』</h3>
+            <p class="video-desc">
+              周囲への感謝を原動力に、創価大学の国際的な環境で語学と専門性を磨き、世界を舞台に活躍するリーダーを目指して羽ばたく先輩の挑戦。
+            </p>
+            <span class="video-for-who">💡 世界へ挑戦したい中高生へ</span>
+          </div>
+        </div>
+
+        <!-- 5: VOL.15 LOTTEで働きたい！幼少期からの夢を叶えた創大生活 (f5IZZyS_CzM) -->
+        <div class="video-fuda video-card-item" data-category="career">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/f5IZZyS_CzM" 
+              title="キャンパスストーリー VOL.15『LOTTEで働きたい！幼少期からの夢を叶えた創大生活』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">💼 夢の企業へ就職内定</span>
+            <h3 class="video-title">VOL.15『LOTTEで働きたい！幼少期からの夢を叶えた創大生活』</h3>
+            <p class="video-desc">
+              子どもの頃からの憧れだった企業「ロッテ」への就職。創大での学びとキャリアサポートをフル活用し、強い意志で夢を掴み取ったサクセスストーリー！
+            </p>
+            <span class="video-for-who">💡 就職活動・大手企業を目指す方へ</span>
+          </div>
+        </div>
+
+        <!-- 6: VOL.14 アフリカで見つけた将来の夢―高校中退からの逆転劇 (Dfl_VmWGAu0) -->
+        <div class="video-fuda video-card-item" data-category="human">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/Dfl_VmWGAu0" 
+              title="キャンパスストーリーVOL.14『アフリカで見つけた将来の夢―高校中退からの逆転劇』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🌟 人生逆転・国際ボランティア</span>
+            <h3 class="video-title">VOL.14『アフリカで見つけた将来の夢―高校中退からの逆転劇』</h3>
+            <p class="video-desc">
+              高校中退という挫折を経験しながらも創価大学で学び直し、アフリカでの活動を通じてかけがえのない将来の志を見つけた感動の逆転ストーリー。
+            </p>
+            <span class="video-for-who">💡 挫折を乗り越えたい・人生を変えたい方へ</span>
+          </div>
+        </div>
+
+        <!-- 7: VOL.13 創価大学は自分らしく輝ける場所 (zV3pK4LsOUs) -->
+        <div class="video-fuda video-card-item" data-category="human">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/zV3pK4LsOUs" 
+              title="キャンパスストーリーVOL.13 『創価大学は自分らしく輝ける場所』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">✨ 自己肯定感・自分らしさ</span>
+            <h3 class="video-title">VOL.13『創価大学は自分らしく輝ける場所』</h3>
+            <p class="video-desc">
+              周りと比べて自信が持てなかった自分が、あたたかく受け入れてくれる仲間や教員に出会うことで、飾らない「自分らしさ」に誇りを持てるようになった軌跡。
+            </p>
+            <span class="video-for-who">💡 自分に自信を持ちたい小中高生へ</span>
+          </div>
+        </div>
+
+        <!-- 8: VOL.12 両親の夢を叶えたい―親孝行できた４年間の大学生活 (h_9g_na7wdw) -->
+        <div class="video-fuda video-card-item" data-category="friends">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/h_9g_na7wdw" 
+              title="キャンパスストーリー VOL.12『両親の夢を叶えたい―親孝行できた４年間の大学生活』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">👨‍👩‍👦 家族への感謝・親孝行</span>
+            <h3 class="video-title">VOL.12『両親の夢を叶えたい―親孝行できた４年間の大学生活』</h3>
+            <p class="video-desc">
+              支えてくれた両親への感謝を胸に、勉強や課外活動に全力で打ち込み、立派に成長した姿で最高の親孝行を果たした感動の4年間。
+            </p>
+            <span class="video-for-who">💡 ご家族・保護者の方にもおすすめ</span>
+          </div>
+        </div>
+
+        <!-- 9: VOL.11 勇気と希望を音楽に乗せて！ (r44Pggg1TIw) -->
+        <div class="video-fuda video-card-item" data-category="human">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/r44Pggg1TIw" 
+              title="キャンパスストーリー VOL.11『勇気と希望を音楽に乗せて！』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🎵 クラブ・情熱・自己表現</span>
+            <h3 class="video-title">VOL.11『勇気と希望を音楽に乗せて！』</h3>
+            <p class="video-desc">
+              音楽活動を通じて仲間と心を一つに合わせ、聴く人に勇気と元気を届けたい。情熱を燃やしてキャンパスライフを駆け抜ける先輩の物語。
+            </p>
+            <span class="video-for-who">💡 音楽や部活動に打ち込みたい方へ</span>
+          </div>
+        </div>
+
+        <!-- 10: VOL.10 新たな自分に出会えた場所 (mDIlVN3bGU8) -->
+        <div class="video-fuda video-card-item" data-category="human">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/mDIlVN3bGU8" 
+              title="キャンパスストーリー VOL.10 『新たな自分に出会えた場所』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🌱 自己発見・視野の拡大</span>
+            <h3 class="video-title">VOL.10『新たな自分に出会えた場所』</h3>
+            <p class="video-desc">
+              高校までの狭い世界から飛び出し、創価大学の多様な環境で新しい興味や可能性を発見。まだ知らなかった「本当の自分」に出会えた感動のプロセス。
+            </p>
+            <span class="video-for-who">💡 これから進路を見つけたい中高生へ</span>
+          </div>
+        </div>
+
+        <!-- 11: VOL.8 勉強も部活も結果を出せる自分へ (CxQ95dbUCpI) -->
+        <div class="video-fuda video-card-item" data-category="career">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/CxQ95dbUCpI" 
+              title="キャンパスストーリー VOL.8 『勉強も部活も結果を出せる自分へ』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🏃‍♂️ 文武両道・高い向上心</span>
+            <h3 class="video-title">VOL.8『勉強も部活も結果を出せる自分へ』</h3>
+            <p class="video-desc">
+              学業と部活動の両立に妥協せず挑戦し、タイムマネジメントと不屈の精神力を鍛え上げた先輩。両方で最高の結果を掴むための努力の秘訣を語ります。
+            </p>
+            <span class="video-for-who">💡 部活と勉強を両立させたい生徒へ</span>
+          </div>
+        </div>
+
+        <!-- 12: VOL.7 あなたの成長の物語はこれから始まる (Jzll-PKm-zU) -->
+        <div class="video-fuda video-card-item" data-category="human">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/Jzll-PKm-zU" 
+              title="キャンパスストーリー VOL.7 『あなたの成長の物語はこれから始まる』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">📖 未来へのエール・挑戦</span>
+            <h3 class="video-title">VOL.7『あなたの成長の物語はこれから始まる』</h3>
+            <p class="video-desc">
+              「大学は自分を大きく変える場所」。不安を抱えながら入学した先輩が、いかにして一歩を踏み出し成長していったかを後輩たちへ温かく語りかけます。
+            </p>
+            <span class="video-for-who">💡 高校1〜3年生・受験生へ</span>
+          </div>
+        </div>
+
+        <!-- 13: VOL.5 自分を肯定してくれる場所 (0i3njpcl4JY) -->
+        <div class="video-fuda video-card-item" data-category="friends">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/0i3njpcl4JY" 
+              title="キャンパスストーリー VOL. 5 『自分を肯定してくれる場所』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🤝 温かいコミュニティ・安心感</span>
+            <h3 class="video-title">VOL.5『自分を肯定してくれる場所』</h3>
+            <p class="video-desc">
+              創価大学には、一人ひとりの個性や挑戦を誰も否定せず、温かく認め励まし合える仲間と先生がいます。安心して自分を表現できるキャンパスの空気感。
+            </p>
+            <span class="video-for-who">💡 居心地の良い大学を探している方へ</span>
+          </div>
+        </div>
+
+        <!-- 14: VOL.4 自分を変えてくれた大切な友達 (pMMtgC0AG8c) -->
+        <div class="video-fuda video-card-item" data-category="friends">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/pMMtgC0AG8c" 
+              title="キャンパスストーリー VOL.4『自分を変えてくれた大切な友達』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">👥 一生の友情・切磋琢磨</span>
+            <h3 class="video-title">VOL.4『自分を変えてくれた大切な友達』</h3>
+            <p class="video-desc">
+              本音で語り合い、辛いときには支え合い、嬉しいときには一緒に喜び合える親友との出会い。友の存在が自分を大きく前向きに変えてくれたストーリー。
+            </p>
+            <span class="video-for-who">💡 かけがえのない仲間を作りたい方へ</span>
+          </div>
+        </div>
+
+        <!-- 15: VOL.3 熱意は道を切りひらく (5-goa1zDaWM) -->
+        <div class="video-fuda video-card-item" data-category="career">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/5-goa1zDaWM" 
+              title="キャンパスストーリー VOL.3 『熱意は道を切りひらく』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🔥 行動力・夢への情熱</span>
+            <h3 class="video-title">VOL.3『熱意は道を切りひらく』</h3>
+            <p class="video-desc">
+              無理かもしれないと思った目標でも、諦めない熱意と行動力があれば必ず道は拓ける。自ら機会を掴み取り、大きな成果を残した先輩のパワフルな体験談。
+            </p>
+            <span class="video-for-who">💡 目標に向かって挑戦したい生徒へ</span>
+          </div>
+        </div>
+
+        <!-- 16: VOL.2 一生涯の友人ができる大学 (os5rLfbN5lM) -->
+        <div class="video-fuda video-card-item" data-category="friends">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/os5rLfbN5lM" 
+              title="キャンパスストーリー VOL.2 『一生涯の友人ができる大学』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🤝 絆・一生モノの出会い</span>
+            <h3 class="video-title">VOL.2『一生涯の友人ができる大学』</h3>
+            <p class="video-desc">
+              寮生活やクラブ活動、学業を通じて育まれた絆は、卒業後もずっと続く一生の宝物。「人生を共に歩める親友に出会えた」と実感する先輩のストーリー。
+            </p>
+            <span class="video-for-who">💡 寮生活や深い人間関係に興味がある方へ</span>
+          </div>
+        </div>
+
+        <!-- 17: VOL.1 ゼロの私を変えた大学生活 (57PRGisOxsU) -->
+        <div class="video-fuda video-card-item" data-category="human">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/57PRGisOxsU" 
+              title="キャンパスストーリー VOL.1 『ゼロの私を変えた大学生活』" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <span class="video-tag">🌱 自信の獲得・大きな変革</span>
+            <h3 class="video-title">VOL.1『ゼロの私を変えた大学生活』</h3>
+            <p class="video-desc">
+              入学当初は「自分には何もない」と思っていた先輩が、創価大学での4年間を通じて様々な挑戦を重ね、自信に満ちた自分へと生まれ変わった記念すべき第1弾！
+            </p>
+            <span class="video-for-who">💡 自分を変えたいと願うすべての人へ</span>
           </div>
         </div>
       </div>

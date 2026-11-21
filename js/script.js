@@ -69,4 +69,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 4. 先輩ストーリーのカテゴリフィルター
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const videoCards = document.querySelectorAll('.video-card-item');
+
+  if (tabBtns.length > 0 && videoCards.length > 0) {
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        videoCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.classList.remove('is-hidden');
+          } else {
+            card.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  }
 });
